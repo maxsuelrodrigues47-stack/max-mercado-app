@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: max-mercado
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DEFAULT_STORE_NAME
+        value: Max Mercado
+      - key: DEFAULT_STORE_SLUG
+        value: max-mercado
+      - key: DEFAULT_STORE_WHATSAPP
+        value: "5516993702260"
+      - key: DEFAULT_ADMIN_EMAIL
+        value: admin@maxmercado.local
+      - key: DEFAULT_ADMIN_PASSWORD
+        sync: false
+      - key: PLATFORM_ADMIN_KEY
+        sync: false

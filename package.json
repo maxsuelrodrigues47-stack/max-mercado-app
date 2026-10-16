@@ -1,0 +1,15 @@
+{
+  "name": "max-mercado",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma de loja virtual para mercados com painel administrativo e pedidos por WhatsApp",
+  "main": "server.js",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=20"},
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1"
+  }
+}
